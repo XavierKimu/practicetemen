@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mi CV</title>
+	<link rel="icon"  href="media/logo.PNG">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		*{ 
+			margin: 0;
+			padding: 0;
+		 }
+
+
+		 header{ 
+		 	position: fixed;
+		 	top: 0;
+		 	left: 0;
+		 	width: 100%;
+		 	display: flex;
+		 	justify-content: space-around;
+		 	transition: 0.7s;
+		 	padding: 30px 20px;
+		 	z-index: 10
+		  }
+
+		  header.abajo{
+		  	background: #fff;
+		  	padding: 15px 20px;
+		  	}
+
+		 header a{
+		  	position: relative;
+		  	font-family: Belleza;
+		  	margin: 0 15px;
+		  	text-decoration: none;
+		  	color: #fff;
+		  	letter-spacing: 2px;
+		  	font-weight: 600;
+		  	transition: 0.7s;
+		  }
+
+
+		  header.abajo a{
+			color: #000;
+		  }
+
+		.topnav {
+			overflow: hidden;
+			position: relative;
+		}
+			
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 15px 70px;
+			text-decoration: none;
+			font-size: 15px;
+			}
+			
+		.topnav a:hover {
+			color: black;
+			}
+			
+		.topnav a.active {
+			background-color: #87CEFA;
+			color: white;
+			padding: 15px 70px;
+			}
+			
+		.topnav .icon {
+			display: none;
+			}
+
+
+		@media screen and (max-width: 600px) {
+			.topnav a:not(:first-child) {display: none;}
+			.topnav a.icon {
+			 float: right;
+			 display: block;
+			  }
+			}
+
+		@media screen and (max-width: 600px) {
+			.topnav.responsive {position: relative;}
+			.topnav.responsive .icon {
+			 position: absolute;
+			 right: 0;
+			 top: 0;
+  			}
+
+  			.topnav.responsive a {
+    			float: none;
+    			display: block;
+    			text-align: left;
+ 			 }
+		}
+
+
+
+		  body{
+		  	margin: 0;
+		  	padding: 0;
+		  }
+		  .zoom{
+		  	width: 100%;
+		  	height: 1000px;
+		  	position: relative;
+		  	overflow: hidden;
+		  	background: url(media/mon1.JPG);
+		  	background-size: cover;
+		  
+		  }
+
+		  .zoom:before{
+		  	content: '';
+		  	position: absolute;
+		  	bottom: 0;
+		  	width: 100%;
+		  	height: 200px;
+		  	z-index: 1000;
+		  	background: linear-gradient(transparent, #fff);
+		  }
+
+		  .zoom .layer1{
+		  	position: absolute;
+		  	left: 40%;
+		  	width: 100%;
+		  	transform: translateX(-50%);
+		  }
+
+		  .zoom .layer2{
+		  	position: absolute;
+		  	right: : 0;
+		  	width: 100%;
+		  }
+
+		  .zoom .text{
+		  	position: absolute;
+		  	right: 0;
+		  	width: 100%;
+		  	transform: translateY(50%);
+		  }
+
+		  .content{
+		  	padding: 100px;
+		  	box-sizing: border-box;
+		  	font-family: Times New Roman;
+		  }
+
+		  .content h2 {
+		  	margin: 0;
+		  	padding: 0;
+		  	font-size: 4em;
+		  }
+
+		 
+
+		  h3 {
+		  	margin: 0;
+		  	padding: 0;
+  			background: #ccc;
+  			background: linear-gradient(90deg, blue, white);
+  			font-family: system-ui;
+  			font-size: 3rem;
+  			line-height: 115%;
+  			-webkit-text-fill-color: transparent;
+  			-webkit-background-clip: text;
+			}
+
+
+		  li {
+		  	font-size: 1.9em;
+		  }
+		  p { 
+		  	font-size: 1.9em;
+		  }
+
+
+		  .circular--square {
+  			border-radius: 50%;
+		}
+	</style>	
+</head>
+<body>
+
+<header>
+	<div class="topnav" id="myTopnav">
+  		<a href="#" class="active" id="logo">Mi curriculum</a>
+  		<a href="#foto" class="fa fa-fw fa-address-book-o">Mi persona</a>
+  		<a href="#volun" class="fa fa-fw fa-users">Voluntariados</a>
+  		<a href="#porta" class="fa fa-fw fa-folder-open">Portafolio</a>
+  		<a href="#conta" class="fa fa-fw fa-envelope">Contacto</a>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i></a>							
+	</div>
+</header>	
+
+	<section class="zoom">
+		<img src="media/texto.PNG" class="text">
+		<img src="media/mont1.PNG" class="layer1">
+		<img src="media/mont2.PNG" class="layer2">
+	</section>
+
+	<section style="background-color:#F5FFFA" class="content" id="foto">
+<br>
+<br>
+		<img src="media/foto.PNG" width="400" height="400" align="right" HSPACE="20" VSPACE="20">
+
+		<h3>Pequeña descripción de mi persona</h3><br>
+		<p>Primero que nada, bienvenido/a es un placer que te encuentres aquí para cococer un poco al respecto de mí. Me llamo Erick Xavier Maldonado Caballero, actualmente tengo 19 años de edad. Soy un joven proactivo que me gusta ver el lado positivo a cualquier situación ya sea a favor o adversa, me gusta ser perseverante y no soy la clase de persona que se rinde fácilmente.</p>
+		<br>
+
+
+	
+<img src="media/info.PNG" width="500" height="650" align="left" HSPACE="20" VSPACE="20">
+
+<h3>Datos personales</h3><br>
+		<p>
+	    <li><b>Nombre completo:</b> Erick Xavier Maldonado Caballero</li><br>
+		<li><b>Dirección:</b> Casa #16 Polígono #65 R. Altavista, San Salvador.</li><br>
+		<li><b>Teléfono móvil:</b> +503 7064-1371</li><br>
+		<li><b>Email:</b> erickxavier.caballero@gmail.com</li><br>
+		<li><b>Fecha y lugar de nacimiento:</b> 25/06/2002, San Salvador.</li><br>
+		<li><b>Númeo de DUI:</b> 06369053-9</li><br> 
+		<li><b>Estado civil:</b> Soltero</li><br>
+		</p> <br>
+	<img src="media/skill.PNG" width="400" height="800" align="right" HSPACE="20" VSPACE="20">
+
+		<h3>Algunas de mis habilidades</h3><br>
+		<p> <li>Trabajo en equipo.</li>
+			<li>Liderazgo.</li>
+			<li>Habilidades comunicativas y facilidad de expresión.</li>
+			<li>Manejo del idioma inglés.</li>
+		</p><br>
+
+		<h4>Idiomas</h4><br>
+			<li>Nivel de inglés: Avanzado.</li><br>
+			<li>Certificación de TOEIC.</li><br>
+			<h4>Informática</h4><br>
+			<li>JavaScript</li><br>
+			<li>HTML y CSS</li><br>
+
+			<b>Uso de herramientas ofimáticas.</b>
+			<li>Certificación en Excel 2016.</li><br>
+	</section>
+
+
+	<section style="background-color:#F0FFFF" class="content" id="volun">
+
+		<div class="w3-container">
+  <h3>Voluntariados</h3><br>
+</div>
+<br>
+<div class="w3-row-padding">
+  <div class="w3-third" style="background-color:#E0FFFF">
+    <h2>Sueños y Letras</h2>
+    <p>Organización que vela por la alfabetización de la niñéz y juventud</p>
+    <p>Imparto clases de inglés de parte de un proyecto llamao Hablamos inglés.
+    Dichas clases las imparto a jóvenes de entre 12 a 17 años, Concepción, Quezaltepeque, en Chalatenago los días Sábado.</p><br>
+    <center><img src="media/logo 2.JPG" width="200" height="200" HSPACE="20" VSPACE="20" class="circular--square"></center><br>
+  </div>
+
+  <div class="w3-third" style="background-color:#F0F8FF">
+    <h2>Biblioteca comunitaria</h2>
+    <p>Proceso en gestión cin la alcaldía de San Martín</p>
+    <p>De parte de Sueños y Letras hemos recibido una donación de 228 libros de diferentes
+    clases, como de literatura, ciencia, historia, etc.
+La biblioteca será un espacio para jóvenes en el que puedan leer y aprender.</p><br>
+<center><img src="media/logo 3.JPEG" width="200" height="200" HSPACE="20" VSPACE="20" class="circular--square"></center><br>
+  </div>
+
+  <div class="w3-third" style="background-color:#40E0D0">
+    <h2>San Martín Habla Inglés</h2>
+    <p>Clases de inglés en el polideportivo villa de la juventud</p>
+    <p>Esta iniciativa va de la mano de la biblioteca, ya que se nos ha dado el espacio 
+    e insumos para dar clases de inglés de San Marín. Esto con apoyo de voluntarios del Centro ¡Supérate! ADOC.</p><br>
+    <center><img src="media/logo.JPG" width="200" height="200" HSPACE="20" VSPACE="20" class="circular--square"></center><br>
+  </div>
+</div>
+<center><img src="media/voluntariado.PNG" width="900" height="600" HSPACE="20" VSPACE="20"></center>
+
+	</section>
+
+
+<section style="background-color:#F5FFFA" class="content" id="porta">
+<br>
+<br>
+		<a href="https://drive.google.com/drive/folders/1VTudJqrk-CdeUWDDFTzv_siy4oyBvoF1?usp=sharing" target="_blank"><img src="media/folio.PNG" width="400" height="400" align="right" HSPACE="20" VSPACE="20"></a>
+
+		<h3>Portafolio</h3><br>
+		<p>En esta sección verás más sobre diferentes logros, evidencia de ellos son los diplomas a los cuales podrás acceder 
+		dando clic en la imagen que se encuentra a tu derecha. </p>
+		<br>
+
+		<p>De igual manera uno de mis proyectos en grupo está en esta página.</p><br>
+
+		<center><iframe src="https://average-page-xavier.netlify.app/" height="500" width="600" title="Iframe Example"></iframe></center>
+	</section><br>
+
+
+
+<section style="background-color:#F0FFFF" class="content" id="conta">
+	<h3>Contacto</h3><br>
+	<p>Si desea contactarme por un medio, le comparto midirección a Facebook por medio de la imagen</p>
+	<center><img src="media/perfil.JPEG"width="250" height="300" HSPACE="20" VSPACE="20" class="circular--square">
+	<a href="https://www.facebook.com/profile.php?id=100010663442252" target="_blank">
+		<img src="media/facebook.PNG" align="middle" height="150" width="150"></a>
+	</center>
+	<center>
+</section><br>
+<center>
+Copyright 2021 - Erick Xavier Maldonado Caballero.<br>
+Puedes contactarme también vía e-mail <a href="erickxavier.caballero@gmail.com">erickxavier.caballero@gmail.com</a> 
+</center>
+	<script type="text/javascript">
+
+
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("header");
+			header.classList.toggle("abajo", window.scrollY>0);
+		})
+
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop();
+
+			$('.layer1').css({
+				width: (100 + scroll/5) + '%'
+			})
+
+			$('.layer2').css({
+				width: (100 + scroll/5) + '%',
+				left:scroll/50 + '%'
+			})
+
+			$('.text').css({
+				top: - scroll/20 + '%'
+			})
+		})
+
+
+			function myFunction() {
+  			var x = document.getElementById("myTopnav");
+  			if (x.className === "topnav") {
+    			x.className += " responsive";
+ 				 } else {
+   			 x.className = "topnav";
+  			}
+		}
+	</script>
+</body>
+</html>
